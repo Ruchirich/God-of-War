@@ -72,6 +72,10 @@ body {
 
   .panel h3 {
     bottom: 50px;
+    font-size: 15px;
   }
+  
+  .panel.active {
+    flex-grow: 1.5;
 
 }
