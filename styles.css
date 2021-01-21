@@ -53,16 +53,25 @@ body {
   transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media(max-width: 480px) {
+#abilities {
+  background-position: right;
+}
+
+@media(max-width: 560px) {
   .container {
-    width: 90vw;
+    flex-direction: column;
+    height: 100vh;
   }
 
-  .panel:nth-of-type(4), .panel:nth-of-type(5) {
-    display: none;
+  #abilities {
+    background-position: center;
+  }
+  .panel {
+    background-size: 100%;
   }
 
-  .abilities {
-    background-position: right;
+  .panel h3 {
+    bottom: 50px;
   }
+
 }
